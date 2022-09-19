@@ -2,6 +2,7 @@ package basic1;
 
 import java.time.Year;
 import java.util.Calendar;
+import java.util.Scanner;
 
 /*
  * 제어문 : 프로그램 흐름을 변경하기 위해
@@ -19,6 +20,12 @@ public class Ex02_control {
 	public static void main(String[] args) {
 		
 		String id = null;	//주민번호
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("주민번호 입력 >> ");
+		id = input.nextLine();
+		
+		
 		int nyun = 0;	//지금의 년대를 저장할 변수
 		char sung = id.charAt(7);	//sung의 7번째 자릿수에 있는 문자를 뽑아옴
 		// sung 변수에 문자가 1이면 남자 출력
